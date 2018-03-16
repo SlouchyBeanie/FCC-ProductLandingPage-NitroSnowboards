@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* NAV BAR */
+.top-nav {
+	background-image: url("https://i.ytimg.com/vi/NWo0BbILv5g/maxresdefault.jpg");
+	background-position: bottom;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+}
+
+.main-topleft-logo {
+	max-width: 175px;
+	max-height: 120px;
+	padding-top: 1rem;
+}
+
+.nav-links {
+	padding-right: 2rem;
+	padding-top: 3rem;
+  display: flex;
+}
+
+.nav-links a {
+	color: white;
+	padding: 0 1rem;
+	transition: all 0.2s;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.nav-links a:hover {
+	color: black;
+}
+
+.social-links-top {
+	display: flex;
+	margin-left: auto;
+	margin-right: 1rem;
+	padding-top: 3rem;
+}
+
+.social-links-top a i {
+	padding-right: 1rem;
+	color: white;
+	transition: all 0.2s;
+}
+
+.social-links-top a i:hover {
+	color: black;
+}
+
+/*CSS for fake Nav Bar */
+nav {
+  opacity: 0;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  height: 10px;
+}
+/*****************/
+
+/* ABOUT SECTION */
+.about {
+	margin: 2rem;
+	margin-top: 3rem;
+}
+
+.about h2 {
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 1rem;
+	font-family: 'Lobster', cursive;
+	font-size: 40px;	
+}
+
+.about p {
+	text-align: center;
+}
+
+.video {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Collection Section */
+.collection {
+	margin-top: 4rem;
+}
+
+.collection h2 {
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 2rem;
+	font-family: 'Lobster', cursive;
+	font-size: 40px;	
+}
+
+.board-showcase {
+	list-style: none;
+	width: 90%;
+	padding: 0;
+	margin: auto;
+}
+
+.board-showcase:first-of-type {
+	margin-bottom: 2px;
+}
+
+.board-showcase li {
+    display: block;
+    float: left;
+    width: 33.33333%;
+}
+
+.board-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+		position: relative;
+}
+
+.board-photo img {
+    width: 100%;
+    height: auto;
+		transition: all 0.8s;
+}
+
+/*text overlay*/
+.image-overlay {
+  transition: .8s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+	
+.board-photo:hover img {
+  opacity: 0.3;
+	transform: scale(1.2);
+}
+
+.board-photo:hover .image-overlay {
+  opacity: 1;
+}
+
+.text-overlay {
+  color: white;
+  padding: 16px 32px;
+	font-family: 'Lobster';
+	font-size: 32px;
+	text-decoration: underline;
+}
+
+.image-overlay a:link,
+.image-overlay a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.image-overlay a:hover,
+.image-overlay a:active {
+	color: white;
+	text-decoration: none;
+}
+
+/* Pricing Section */
+.pricing {
+	margin-top: 2rem;
+	background-color: #eee;
+	padding-bottom: 1.5rem;
+}
+
+.pricing h2 {
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 2rem;
+	font-family: 'Lobster', cursive;
+	font-size: 40px;	
+}
+
+.pricing p {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+table {
+	text-align: center;
+}
+
+.form-container {
+	margin: auto;
+	text-align: center;
+}
+
+/* Footer */
+footer div {
+	height: 60px;
+	width: 100%;
+	background-color: #212529;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+}
