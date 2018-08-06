@@ -28,6 +28,7 @@ body {
 	overflow: hidden;
 	display: flex;
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .main-topleft-logo {
