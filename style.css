@@ -27,6 +27,7 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
+	background-repeat: no-repeat;
 }
 
 .main-topleft-logo {
